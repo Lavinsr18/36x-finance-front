@@ -118,7 +118,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
               <p className="text-gray-400">Raghav Kumar, Financial Services Curator</p>
               <p className="text-gray-400">Sector 9A, Bhadurgarh Haryana | Serving Pan India</p>
-              <p className="text-gray-400">+91-8104570045 | 36xfianance@gmail.com</p>
+              <p className="text-gray-400">+91-7987164248 | 36xfianance@gmail.com</p>
                <p className="text-gray-400">www.36xfianance.com</p>
               <p className="text-gray-400 font-semibold">No Cold Calls | No Spam | Just Value</p>
             </div>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
-// import Img from "../boy.png"
-import Img from "../pages/imgg.png"
+import Img from "../boy.png";
+// import Img from "../pages/imgg.png"
 import { 
   Calculator, 
   FileText, 
@@ -84,13 +84,20 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="relative">
-                <img 
-                  src={Img} 
-                  alt="Professional financial planning consultation" 
-                  className="rounded-2xl shadow-2xl w-full h-auto opacity-90" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(222,84%,5%)]/50 to-transparent rounded-2xl"></div>
-              </div>
+            <img
+            /////////////////////////////////////
+            ///////////////////////////////////////
+              src={Img}
+              // src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+              alt="Person peacefully reading financial documents"
+              className="rounded-2xl shadow-2xl animate-float w-full"
+            />
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-green-500/20 rounded-full animate-gentle-pulse"></div>
+            <div 
+              className="absolute -top-6 -right-6 w-16 h-16 bg-orange-500/20 rounded-full animate-gentle-pulse"
+              style={{ animationDelay: "2s" }}
+            ></div>
+          </div>
             </motion.div>
           </div>
         </div>

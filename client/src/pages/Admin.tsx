@@ -5,16 +5,16 @@ const AdminLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e: { preventDefault: () => void; }) => {
+  const handleLogin = (e) => {
     e.preventDefault();
     console.log('Logging in with:', email, password);
-    // Add login logic here
+    // Add your authentication logic here
   };
 
   return (
     <div className="admin-login-container">
       <div className="overlay" />
-      <div className="login-box">
+      <div className="login-box animate-fade-in">
         <h1 className="login-title">36x Finance Admin Panel</h1>
         <form onSubmit={handleLogin} className="login-form">
           <input
@@ -22,7 +22,7 @@ const AdminLogin = () => {
             placeholder="Username or Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="input-field"
+            className="input-field animate-hover"
             required
           />
           <input
@@ -30,10 +30,10 @@ const AdminLogin = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="input-field"
+            className="input-field animate-hover"
             required
           />
-          <button type="submit" className="login-button">Login</button>
+          <button type="submit" className="login-button glow-on-hover">Login</button>
         </form>
       </div>
     </div>
